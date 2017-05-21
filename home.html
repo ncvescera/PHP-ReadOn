@@ -23,9 +23,11 @@ and open the template in the editor.
         <script src="./js/getUser.js"></script>
         <script src="./js/addLibro.js"></script>
         <script src="./js/cerca.js"></script>
+        <script src="./js/select.js"></script>
         <script>
             $(document).ready(function(){
                 getUSer();
+                select();
             });
         </script>
         
@@ -73,6 +75,17 @@ and open the template in the editor.
                     </div>
                     <br>
                     <div id="cercaTabella"></div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>Select</h2>
+                    <select id="select" class="form-control" onchange="printSelectTable()"></select>
+                    <br>
+                    <div id="secectTable"></div>
                 </div>
             </div>
         </div>
