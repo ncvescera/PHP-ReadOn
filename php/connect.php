@@ -1,7 +1,7 @@
 <?php
 $db_host = "localhost";
-$db_user = "ncvescera";
-$db_pswd = "testipaolo2017";
+$db_user = "";
+$db_pswd = "";
 $db_name = "libri";
 $list = array();
  
