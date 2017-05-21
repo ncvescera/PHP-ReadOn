@@ -13,6 +13,8 @@ foreach($connection->query($query) as $result){
     $ok = true;
 }
 
+$connection = null;
+
 if($ok){
     session_start();
     $_SESSION["user"] = $user;

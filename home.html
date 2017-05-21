@@ -21,6 +21,7 @@ and open the template in the editor.
         
         
         <script src="./js/getUser.js"></script>
+        <script src="./js/addLibro.js"></script>
         <script>
             $(document).ready(function(){
                 getUSer();
@@ -38,25 +39,26 @@ and open the template in the editor.
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h2>Aggiungi libro</h2>
-                    <form>
+                    <div id="addresult"></div>
+                    <div>
                         <div class="form-group">
                             <label>Autore</label>
-                            <input type="text" name="autore" class="form-control">
+                            <input type="text" id="autore" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Casa Editrice</label>
-                            <input type="text" name="editrice" class="form-control">
+                            <input type="text" id="editrice" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Titolo</label>
-                            <input type="text" name="titolo" class="form-control">
+                            <input type="text" id="titolo" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>ID</label>
-                            <input type="text" name="id" class="form-control">
+                            <input type="number" id="id" class="form-control" required>
                         </div>
-                        <button type="submit" class="btn btn-default">Aggiungi</button>
-                    </form>
+                        <button class="btn btn-default" onclick="addLibro()">Aggiungi</button>
+                    </div>
                 </div>
             </div>
         </div>

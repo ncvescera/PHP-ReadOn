@@ -17,4 +17,5 @@ $query = "INSERT INTO users(email,userid,nome,cognome,pass) VALUES ('$email','$u
 
 $connection->exec($query);
 
+$connection = null;
 header("Location: ../index.html");
